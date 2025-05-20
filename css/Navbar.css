@@ -1,0 +1,22 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo {
+    color: #e50914;
+    font-size: 1.8rem;
+    font-weight: bold;
+  }
+  
+  .nav-links a {
+    margin-left: 20px;
+    font-size: 1rem;
+  }
+  

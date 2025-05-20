@@ -1,0 +1,74 @@
+/* Card Section */
+.card-section {
+  padding: 40px 60px;
+  background-color: #111;
+  color: white;
+  width: 100%;
+  overflow-x: hidden; /* Ensures entire section doesn't overflow */
+}
+
+.card-section h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+  text-align: center;
+}
+
+.card-row {
+  display: flex;
+  flex-wrap: wrap;           /* Wraps to next line */
+  justify-content: center;   /* Centers content */
+  gap: 20px;
+  max-width: 100%;
+  margin: 0 auto;
+  overflow-x: hidden;        /* Extra safety */
+}
+
+/* Cards with 2:3 aspect ratio */
+.card {
+  width: 160px;
+  aspect-ratio: 2 / 3;          /* Maintains 2:3 ratio */
+  background-color: #222;
+  border-radius: 10px;
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card img {
+  width: 100%;
+  height: auto;            /* Maintain natural aspect ratio */
+  flex: 1 1 auto;          /* Fill vertical space */
+  object-fit: cover;
+}
+
+.card p {
+  margin: 0;
+  padding: 8px 0;
+  text-align: center;
+  font-weight: bold;
+  background-color: #111;   /* Separate text area */
+  flex-shrink: 0;
+}
+
+/* Banner Buttons - Red Color */
+.banner-buttons button {
+  background-color: #f61616; /* Dark red */
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-right: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.banner-buttons button:hover {
+  background-color: #f61616; /* Lighter red on hover */
+}
